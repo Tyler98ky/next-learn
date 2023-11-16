@@ -11,6 +11,7 @@ export const authConfig = {
   ],
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
+      // hi
       console.debug(`path request: ${nextUrl.pathname}`);
 
       const isLoggedIn = !!auth?.user;
